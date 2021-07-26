@@ -1,6 +1,9 @@
 # docker-virtualbox
 Run VirtualBox (6.1) in a container
 
+You will need VirtualBox kernel modules on the host system.
+The easiest way to get them is to install virtualbox on the host system (and remove it again.)
+
 You can run it like this:
 
 ```docker run -d --rm --network=host --device /dev/vboxdrv:/dev/vboxdrv -e DISPLAY=unix:0 garo/docker-virtualbox```
